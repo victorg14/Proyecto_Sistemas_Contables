@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="800.0" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #00401b;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.proyectosistemascontables.loginController">
+    <children>
+        <!-- StackPane con anclajes responsivos -->
+        <StackPane maxHeight="660.0" maxWidth="660.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <children>
+                <AnchorPane maxHeight="660.0" maxWidth="660.0" minHeight="600.0" minWidth="600.0" prefHeight="660.0" prefWidth="660.0" style="-fx-background-color: #FEFAE0; -fx-background-radius: 22; -fx-border-radius: 22; -fx-border-color: #D99201; -fx-border-width: 2; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0, 0, 4);" StackPane.alignment="CENTER">
+                    <children>
+                        <!-- Imagen del logo con posición proporcional -->
+                        <ImageView fitHeight="247.0" fitWidth="246.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="207.0" AnchorPane.topAnchor="14.0">
+                            <image>
+                                <Image url="@img/aurum.png" />
+                            </image>
+                        </ImageView>
+
+                        <!-- Contenedor del formulario con anclajes -->
+                        <AnchorPane maxHeight="660.0" maxWidth="660.0" minHeight="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="237.0">
+                            <children>
+                                <!-- Título AURUM FINANCE -->
+                                <Label alignment="CENTER" prefHeight="62.0" text="AURUM FINANCE" textAlignment="CENTER" textFill="#00401b" textOverrun="CLIP" AnchorPane.leftAnchor="127.0" AnchorPane.rightAnchor="127.0" AnchorPane.topAnchor="20.0">
+                                    <font>
+                                        <Font name="System Bold" size="47.0" />
+                                    </font>
+                                </Label>
+
+                                <!-- Subtítulo Inicio de sesión -->
+                                <Label alignment="CENTER" contentDisplay="CENTER" text="Inicio de sesión" textFill="#00401b" textOverrun="CLIP" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="128.0" AnchorPane.topAnchor="98.0">
+                                    <font>
+                                        <Font name="System Bold" size="26.0" />
+                                    </font>
+                                </Label>
+
+                                <!-- Label oculto ID -->
+                                <Label fx:id="lblID" layoutX="323.0" layoutY="382.0" opacity="0.0" text="ID" textFill="white" />
+
+                                <!-- Label Usuario -->
+                                <Label text="Ingrese el usuario:" textFill="#00401b" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="158.0">
+                                    <font>
+                                        <Font name="Tahoma Bold" size="17.0" />
+                                    </font>
+                                </Label>
+
+                                <!-- Campo Usuario -->
+                                <TextField fx:id="txtUser" prefHeight="38.0" promptText="Usuario" style="-fx-border-color: #d99201; -fx-background-radius: 0; -fx-border-radius: 0; -fx-background-color: #FEFAE0; -fx-text-fill: #00401b; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0, 0, 4); -fx-border-width: 2;" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="190.0">
+                                    <font>
+                                        <Font name="Tahoma" size="16.0" />
+                                    </font>
+                                </TextField>
+
+                                <!-- Label Contraseña -->
+                                <Label text="Ingrese la contraseña:" textFill="#00401b" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="248.0">
+                                    <font>
+                                        <Font name="Tahoma Bold" size="17.0" />
+                                    </font>
+                                </Label>
+
+                                <!-- Campo Contraseña con botón de ojo -->
+                                <StackPane alignment="CENTER_LEFT" prefHeight="51.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="275.0">
+                                    <children>
+                                        <TextField fx:id="txtPass" managed="true" maxWidth="Infinity" prefHeight="38.0" promptText="Contraseña" style="-fx-background-color: #FEFAE0; -fx-text-fill: #00401B; -fx-border-color: #d99201; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0, 0, 4); -fx-font-weight: bold; -fx-border-width: 2;" visible="false" StackPane.alignment="CENTER_LEFT">
+                                            <font>
+                                                <Font name="Tahoma Bold" size="16.0" />
+                                            </font>
+                                        </TextField>
+                                        <PasswordField fx:id="txtpass1" maxHeight="-Infinity" maxWidth="Infinity" prefHeight="38.0" promptText="Contraseña" style="-fx-text-fill: #00401B; -fx-border-radius: 0; -fx-background-radius: 0; -fx-background-color: #FEFAE0; -fx-border-width: 2; -fx-font-weight: bold; -fx-border-color: #d99201; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0, 0, 4);">
+                                            <font>
+                                                <Font name="Tahoma" size="16.0" />
+                                            </font>
+                                        </PasswordField>
+                                        <Button fx:id="btnOjo" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="31.0" style="-fx-background-color: #FEFAE0; -fx-text-fill: #00401B;" StackPane.alignment="CENTER_RIGHT">
+                                            <StackPane.margin>
+                                                <Insets right="10.0" />
+                                            </StackPane.margin>
+                                        </Button>
+                                    </children>
+                                </StackPane>
+
+                                <!-- Botón Iniciar Sesión -->
+                                <Button fx:id="btnIngresar" alignment="CENTER" prefHeight="46.0" style="-fx-border-width: 2; -fx-background-color: #00401B; -fx-background-radius: 0; -fx-border-radius: 0; -fx-border-color: #D99201;" stylesheets="@style/style.css" text="Iniciar Sesión" textAlignment="CENTER" textFill="#fefae0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="345.0">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>

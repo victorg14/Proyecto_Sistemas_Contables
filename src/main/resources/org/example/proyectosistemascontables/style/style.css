@@ -1,0 +1,363 @@
+
+.table-cell {
+    -fx-text-fill: white; /* Azul para el texto de las celdas */
+    -fx-background-color:  #2C3539;
+     /*linear-gradient(to right, #3B0A45, #2C3539, #121212)*/
+    -fx-font-weight: bold;  /* Hacer el texto en negrita */
+    -fx-font-size: 14px;    /* Ajustar el tamaño de la fuente */
+}
+
+#btnEliminar{
+-fx-font-size: 12px;    /* Ajustar el tamaño de la fuente */
+}
+#btnEditar{
+-fx-font-size: 12px;    /* Ajustar el tamaño de la fuente */
+}
+
+.combo-box {
+    -fx-background-color: #D4AF37; /* dorado */
+    -fx-text-fill: #00401B;         /* verde oscuro */
+    -fx-border-color: #D99201;      /* dorado oscuro */
+    -fx-border-width: 2;
+}
+
+.combo-box:hover {
+    -fx-background-color: #E1C16E; /* dorado más claro al hover */
+}
+
+.combo-box .arrow {
+    -fx-background-color: #00401B;
+}
+
+.combo-box .arrow:hover {
+    -fx-background-color: #00401B;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #FEFAE0;  /* fondo blanco */
+    -fx-text-fill: #00401B;         /* texto verde oscuro */
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #B5C99A;  /* verde suave al hover */
+}
+
+.combo-box .list-cell:selected {
+    -fx-background-color: #FEFAE0;  /* verde principal seleccionado */
+    -fx-text-fill: #00401B;
+}
+
+.text-field {
+    -fx-background-radius: 5;   /* Radio de las esquinas redondeadas */
+    -fx-border-color: #d99201;   /* Color del borde */
+    -fx-border-width: 2;         /* Grosor del borde */
+    -fx-border-radius: 5;       /* Esquinas redondeadas también para el borde */
+    -fx-background-color: #FEFAE0;
+    -fx-pref-width: 300px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0, 0, 4);
+}
+.password-field {
+    -fx-background-radius: 15;   /* Radio de las esquinas redondeadas */
+    -fx-border-color: #4CAF50;   /* Color del borde */
+    -fx-border-width: 2;         /* Grosor del borde */
+    -fx-border-radius: 15;       /* Esquinas redondeadas también para el borde */
+}
+
+/* Estilo para el DatePicker */
+.date-picker {
+    -fx-background-color:  #3B0A45; /* Fondo de color naranja */
+    -fx-text-fill: Black; /* Texto en blanco */
+    -fx-border-color: #00ff00; /* Borde verde */
+    -fx-border-width: 2px; /* Borde de 2px */
+}
+
+/* Estilo cuando se muestra el pop-up del calendario (el calendario emergente) */
+.date-picker .text-field {
+    -fx-background-color:  #333333; /* Fondo morado */
+    -fx-text-fill: white; /* Texto en blanco */
+    -fx-border-color: #00ff00; /* Borde verde */
+    -fx-border-width: 2px; /* Borde de 2px */
+}
+
+/* Estilo para los botones de navegación del calendario */
+.date-picker .arrow-button {
+    -fx-background-color:  #3B0A45; /* Fondo del botón de flecha */
+    -fx-border-color: #00ff00; /* Borde verde */
+    -fx-border-width: 2px;
+}
+
+/* Opcional: Puedes también ajustar la apariencia de los días en el calendario */
+.date-picker .calendar-popup .day-cell {
+    -fx-background-color: transparent; /* Fondo transparente para las celdas de días */
+    -fx-text-fill: black; /* Texto negro en las celdas */
+}
+
+.date-picker .calendar-popup .day-cell:hover {
+    -fx-background-color: #00ff00; /* Color verde al pasar el mouse por encima */
+    -fx-text-fill: white; /* Texto blanco al pasar el mouse */
+}
+
+/* Cambiar el tamaño del ProgressIndicator */
+.progress-indicator {
+    -fx-progress-color: #4CAF50; /* Color de la barra de progreso */
+    /*-fx-accent: #4CAF50;  Color de acento (el color de la barra de progreso) */
+   /* -fx-pref-width: 200px; /* Ancho preferido */
+   /* -fx-pref-height: 200px; /* Alto preferido */
+}
+
+/* Personalizar el anillo circular */
+.progress-indicator .indicator {
+   /* -fx-background-color: transparent;  El fondo de la "rueda" del indicador */
+    -fx-border-color: #4CAF50; /* Color del borde */
+    /*-fx-border-width: 5px; /* Ancho del borde */
+   /* -fx-border-style: solid; /* Estilo del borde */
+}
+
+/* Fondo general */
+.table-view {
+    -fx-background-color: #FEFAE0;
+    -fx-border-color: #D4AF37; /* borde dorado */
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 5;
+    -fx-table-cell-border-color: transparent;
+    -fx-control-inner-background: #FEFAE0;
+}
+
+/* Encabezado */
+.table-view .column-header-background {
+    -fx-background-color: #D4AF37; /* dorado */
+    -fx-background-radius: 6 6 0 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-text-fill: #00401B; /* verde oscuro */
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-alignment: CENTER;
+}
+
+/* Celdas y filas */
+.table-row-cell .table-cell {
+    -fx-text-fill: #00401B;
+    -fx-font-size: 13px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 8 12 8 12;
+}
+
+/* Filas alternadas */
+.table-row-cell:odd .table-cell {
+    -fx-background-color: #FEFAE0; /* fondo claro */
+}
+
+.table-row-cell:even .table-cell {
+    -fx-background-color: #F5F2D0; /* tono ligeramente más oscuro */
+}
+
+/* Hover */
+.table-row-cell:hover .table-cell {
+    -fx-background-color: #B5C99A; /* verde seco suave */
+}
+
+/* Selección */
+.table-row-cell:selected .table-cell {
+    -fx-background-color: #6B8E23; /* verde principal */
+    -fx-text-fill: white;
+}
+
+/* Bordes redondeados inferiores */
+.table-view .virtual-flow > .clipped-container > .sheet > .table-row-cell:last-child {
+    -fx-background-radius: 0 0 6 6;
+}
+
+/* Alinear encabezados de tabla a la izquierda */
+.table-view .column-header-background .label {
+    -fx-alignment: CENTER-LEFT;
+    -fx-padding: 0 0 0 10;
+}
+
+.table-view .column-header {
+    -fx-alignment: CENTER-LEFT;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================== Estilos de Tabla ==================== */
+/* Alinear encabezados de tabla a la izquierda */
+.table-view .column-header-background .label {
+    -fx-alignment: CENTER-LEFT;
+    -fx-padding: 0 0 0 10;
+}
+
+.table-view .column-header {
+    -fx-alignment: CENTER-LEFT;
+}
+
+/* ==================== Estilos del Formulario ==================== */
+/* Contenedor principal del formulario */
+.form-container {
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+    -fx-background-radius: 10;
+    -fx-border-color: #D99201;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-padding: 20;
+}
+
+/* Sección de campos del formulario */
+.form-section {
+    -fx-spacing: 15;
+    -fx-padding: 10;
+}
+
+/* Labels del formulario */
+.form-label {
+    -fx-text-fill: #fefae0;
+    -fx-font-family: "System Bold";
+    -fx-font-size: 14px;
+    -fx-padding: 0 0 5 0;
+}
+
+/* Text fields del formulario */
+.form-field {
+    -fx-pref-height: 40;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Text field deshabilitado */
+.form-field:disabled {
+    -fx-opacity: 0.7;
+    -fx-background-color: #cccccc;
+}
+
+/* ComboBox estilos */
+.combo-box {
+    -fx-background-color: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.combo-box .list-cell {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.combo-box:hover {
+    -fx-background-color: #f0f0f0;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: #D99201;
+}
+
+.combo-box .arrow-button .arrow {
+    -fx-background-color: white;
+}
+
+/* Contenedor de grupo de campo (label + input) */
+.field-group {
+    -fx-spacing: 5;
+}
+
+/* Botones del formulario */
+.btn-primary {
+    -fx-background-color: #00401b;
+    -fx-border-color: #D99201;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-text-fill: #FEFAE0;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-pref-height: 45;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 3);
+}
+
+.btn-primary:hover {
+    -fx-background-color: #005a24;
+    -fx-border-color: #FFB800;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0, 0, 4);
+}
+
+.btn-secondary {
+    -fx-background-color: #00401b;
+    -fx-border-color: #ff4444;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-text-fill: #FEFAE0;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-pref-height: 45;
+    -fx-cursor: hand;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #005a24;
+    -fx-border-color: #ff6666;
+}
+
+.btn-icon {
+    -fx-background-color: #00401b;
+    -fx-border-color: #FFA500;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-text-fill: #FEFAE0;
+    -fx-font-size: 18px;
+    -fx-pref-width: 50;
+    -fx-pref-height: 40;
+    -fx-cursor: hand;
+}
+
+.btn-icon:hover {
+    -fx-background-color: #005a24;
+    -fx-border-color: #FFB800;
+}
+
+/* Radio buttons */
+.radio-button {
+    -fx-text-fill: #fefae0;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+.radio-button .radio {
+    -fx-background-color: #fefae0;
+}
+
+.radio-button:selected .radio .dot {
+    -fx-background-color: #D99201;
+}
+
+/* Título del formulario */
+.form-title {
+    -fx-text-fill: #fefae0;
+    -fx-font-family: "System Bold";
+    -fx-font-size: 28px;
+    -fx-alignment: center;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.proyectosistemascontables.AdminController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="208.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/hombre.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblUser" layoutX="248.0" layoutY="218.0" text="user">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRol" layoutX="257.0" layoutY="256.0" text="rol">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblID" layoutX="269.0" layoutY="34.0" />
+   </children>
+</AnchorPane>

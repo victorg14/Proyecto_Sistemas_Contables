@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorMostrar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="649.0" prefWidth="1044.0" style="-fx-background-color: #00401b;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.proyectosistemascontables.HelloController">
+    <children>
+        <AnchorPane fx:id="panelInterior" style="-fx-background-color: #fefae0; -fx-border-color: #d99201; -fx-border-radius: 22; -fx-background-radius: 22; -fx-border-width: 2;" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <children>
+                <!-- Información de usuario en la esquina superior derecha -->
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="28.0">
+                    <image>
+                        <Image url="@img/cuenta.png" />
+                    </image>
+                </ImageView>
+
+                <Label fx:id="lblUser" maxWidth="100.0" text="user" textFill="#00401b" wrapText="true" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="13.0">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                </Label>
+
+                <Label fx:id="lblRol" maxWidth="100.0" text="rol" textFill="#00401b" wrapText="true" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="43.0">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+
+                <!-- ScrollPane con viewport bounds para contener todo -->
+                <ScrollPane fx:id="scrollContenido" fitToWidth="true" fitToHeight="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED" pannable="false" style="-fx-background-color: transparent; -fx-background: #fefae0;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0">
+                    <content>
+                        <!-- Contenido central en VBox -->
+                        <VBox fx:id="vboxContenido" alignment="CENTER" spacing="15.0" style="-fx-background-color: #fefae0;" minHeight="0.0" minWidth="0.0">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                            <children>
+                                <!-- Logo Grande -->
+                                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/aurum.png" />
+                                    </image>
+                                </ImageView>
+
+                                <!-- Título AURUM FINANCE -->
+                                <Label alignment="CENTER" maxWidth="Infinity" text="AURUM FINANCE" textAlignment="CENTER" textFill="#00401b" wrapText="true">
+                                    <font>
+                                        <Font name="System Bold" size="48.0" />
+                                    </font>
+                                </Label>
+
+                                <!-- Línea decorativa -->
+                                <Label alignment="CENTER" text="────────────────────" textFill="#d99201">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Label>
+
+                                <!-- Subtítulo -->
+                                <Label alignment="CENTER" maxWidth="Infinity" text="Tu sistema de contabilidad confiable" textAlignment="CENTER" textFill="#00401b" wrapText="true">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="-10.0" />
+                                    </VBox.margin>
+                                </Label>
+
+                                <!-- Mensaje de bienvenida personalizado -->
+                                <VBox alignment="CENTER" spacing="8.0">
+                                    <children>
+                                        <Label fx:id="lblBienvenida" alignment="CENTER" maxWidth="Infinity" text="Bienvenido de nuevo" textAlignment="CENTER" textFill="#00401b" wrapText="true">
+                                            <font>
+                                                <Font name="System Bold" size="28.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="lblUserBienvenida" alignment="CENTER" maxWidth="Infinity" text="[Usuario]" textAlignment="CENTER" textFill="#d99201" wrapText="true">
+                                            <font>
+                                                <Font name="System Bold" size="32.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets top="10.0" />
+                                    </VBox.margin>
+                                </VBox>
+
+                                <!-- Información del rol -->
+                                <Label fx:id="lblRolBienvenida" alignment="CENTER" maxWidth="Infinity" text="Contador" textAlignment="CENTER" textFill="#00401b" wrapText="true">
+                                    <font>
+                                        <Font name="System Bold Italic" size="20.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="-10.0" />
+                                    </VBox.margin>
+                                </Label>
+
+                                <!-- Fecha de último acceso (opcional) -->
+                                <Label fx:id="lblUltimoAcceso" alignment="CENTER" maxWidth="Infinity" text="Último acceso: 14 de Octubre, 2025" textAlignment="CENTER" textFill="#666666" wrapText="true">
+                                    <font>
+                                        <Font name="System" size="14.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="-5.0" />
+                                    </VBox.margin>
+                                </Label>
+
+                                <!-- Imagen corporativa/ilustración -->
+                                <ImageView fitHeight="80.0" fitWidth="80.0" managed="true" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/monedas_doradas.png" />
+                                    </image>
+                                    <VBox.margin>
+                                        <Insets top="5.0" />
+                                    </VBox.margin>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                    </content>
+                </ScrollPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

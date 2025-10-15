@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="900.0" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: #00401B;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.proyectosistemascontables.AuditorController">
+    <children>
+        <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <left>
+                <!-- Panel lateral izquierdo - Menú Auditor -->
+                <AnchorPane maxWidth="300.0" minWidth="250.0" prefHeight="700.0" prefWidth="300.0" style="-fx-background-color: #FEFAE0;" BorderPane.alignment="CENTER">
+                    <children>
+                        <!-- Logo -->
+                        <ImageView fitHeight="118.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="93.5" AnchorPane.rightAnchor="93.5" AnchorPane.topAnchor="14.0">
+                            <image>
+                                <Image url="@img/aurum.png" />
+                            </image>
+                        </ImageView>
+
+                        <!-- Título AURUM FINANCE -->
+                        <Label alignment="CENTER" text="AURUM FINANCE" textAlignment="CENTER" textFill="#00401b" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="132.0">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+
+                        <!-- Label ID oculto -->
+                        <Label fx:id="lblID" layoutX="17.0" layoutY="12.0" />
+
+                        <!-- Menú Principal -->
+                        <AnchorPane fx:id="anchords" prefHeight="55.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="163.0">
+                            <children>
+                                <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="43.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/casa.png" />
+                                    </image>
+                                </ImageView>
+                                <Button fx:id="btnds" layoutX="92.0" layoutY="6.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="185.0" style="-fx-background-color: transparent;" text="Principal" textFill="#00401b">
+                                    <font>
+                                        <Font name="System Bold" size="17.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+
+                        <!-- Menú Administrar Usuarios -->
+                        <AnchorPane fx:id="anchorAdministrar" prefHeight="55.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="219.0">
+                            <children>
+                                <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="43.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/libro-de-diario.png" />
+                                    </image>
+                                </ImageView>
+                                <Button fx:id="btnAdministrar" layoutX="92.0" layoutY="6.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="185.0" style="-fx-background-color: transparent;" text="Administrar Usuarios" textFill="#00401b">
+                                    <font>
+                                        <Font name="System Bold" size="17.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+
+                        <!-- Menú Registrar Usuarios -->
+                        <AnchorPane fx:id="anchorRegistrar" prefHeight="55.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="275.0">
+                            <children>
+                                <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="43.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/libro-de-diario.png" />
+                                    </image>
+                                </ImageView>
+                                <Button fx:id="btnRegister" layoutX="92.0" layoutY="6.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="185.0" style="-fx-background-color: transparent;" text="Registrar Usuarios" textFill="#00401b">
+                                    <font>
+                                        <Font name="System Bold" size="17.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+
+                        <!-- Botón Cerrar Sesión -->
+                        <AnchorPane prefHeight="55.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <children>
+                                <Button fx:id="btnCerrarSesion" alignment="CENTER_RIGHT" layoutX="43.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="182.0" style="-fx-background-color: #fefae0; -fx-text-fill: #00401B; -fx-border-color: #00401B; -fx-border-radius: 11; -fx-background-radius: 11; -fx-border-width: 2;" text="Cerrar sesion" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                </Button>
+                                <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="56.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/salida.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </left>
+            <center>
+                <!-- Panel central - Contenido principal -->
+                <AnchorPane fx:id="AnchorMostrar" minWidth="600.0" prefHeight="700.0" prefWidth="1040.0" style="-fx-background-color: #00401B;" BorderPane.alignment="CENTER">
+                    <children>
+                        <!-- Contenedor del contenido con bordes responsivos -->
+                        <AnchorPane style="-fx-background-color: #fefae0; -fx-border-color: #d99201; -fx-border-width: 2; -fx-background-radius: 22; -fx-border-radius: 22;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                            <children>
+                                <!-- Icono de usuario -->
+                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="166.0" AnchorPane.topAnchor="30.0">
+                                    <image>
+                                        <Image url="@img/cuenta.png" />
+                                    </image>
+                                </ImageView>
+
+                                <!-- Label Usuario -->
+                                <Label fx:id="lblUser" text="user" textFill="#00401b" AnchorPane.rightAnchor="45.4" AnchorPane.topAnchor="20.0">
+                                    <font>
+                                        <Font name="System Bold" size="25.0" />
+                                    </font>
+                                </Label>
+
+                                <!-- Label Rol -->
+                                <Label fx:id="lblRol" text="rol" textFill="#00401b" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="56.0">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+
+                                <!-- Título de Bienvenida -->
+                                <Label text="Bienvenido a Aurum Finance!" textFill="#00401b" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="83.0">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Label>
+
+                                <!-- Imagen del usuario centrada -->
+                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+                                    <image>
+                                        <Image url="@img/hombre.png" />
+                                    </image>
+                                </ImageView>
+
+                                <!-- Mensaje temporal -->
+                                <Label alignment="CENTER" text="Dashboard en Proceso" textFill="#00401b" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="380.0">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>
