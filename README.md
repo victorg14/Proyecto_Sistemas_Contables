@@ -1,4 +1,4 @@
-# 📘 Aurum Finance
+# Aurum Finance
 
 ## 🧾 Descripción General
 
