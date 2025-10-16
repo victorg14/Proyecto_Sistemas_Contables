@@ -56,7 +56,7 @@ Restaurar base de datos exportada (.backup) desde pgAdmin 4
 La siguiente imagen muestra el **modelo entidad-relación (ERD)** de la base de datos utilizada por **Aurum Finance**, donde se representan las principales tablas y sus relaciones.
 
 <p align="center">
-  <img src="./assets/dbAurum.png" alt="Estructura de la Base de Datos Aurum Finance" width="800">
+  <img src="./assets/dbAurum.PNG" alt="Estructura de la Base de Datos Aurum Finance" width="800">
 </p>
 
 ---
